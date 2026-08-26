@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "FutureMe",
+    "slug": "futureme",
+    "scheme": "vibecode",
+    "version": "1.5.3",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-apple-authentication",
+      "./plugins/withFollyCoroutinesOff"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dammann.futureme",
+      "buildNumber": "44",
+      "usesAppleSignIn": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "FutureMe uses the camera to capture photos inside the app before you publish them.",
+        "NSMicrophoneUsageDescription": "FutureMe uses the microphone to record audio tracks that the app attaches to your creations.",
+        "NSPhotoLibraryUsageDescription": "FutureMe accesses your photo library to let you choose media that appears in the app.",
+        "NSMotionUsageDescription": "FutureMe uses motion data to run movement-based features you enable in the app.",
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.786920975006-nnscr630340ien378bngimvp3nhmp0f8"
+            ]
+          }
+        ]
+      }
+    },
+    "android": {
+      "edgeToEdgeEnabled": true
+    },
+    "icon": "./icon.png"
+  }
+}

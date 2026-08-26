@@ -1,0 +1,38 @@
+{
+  "cli": {
+    "version": "16.17.4"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_VIBECODE_BACKEND_URL": "https://maple-truss.vibecode.run",
+        "EXPO_PUBLIC_BACKEND_URL": "https://maple-truss.vibecode.run",
+        "BACKEND_URL": "https://maple-truss.vibecode.run",
+        "EXPO_PUBLIC_GOOGLE_CLIENT_ID": "786920975006-nnscr630340ien378bngimvp3nhmp0f8.apps.googleusercontent.com"
+      },
+      "ios": {
+        "distribution": "store"
+      },
+      "android": {
+        "distribution": "store"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId": "6761276962"
+      }
+    }
+  }
+}
